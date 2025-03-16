@@ -16,7 +16,7 @@ O objetivo é criar um componente de cartão de pré-visualização em 3 colunas
 
 ### Links
 
-- URL da solução: [Adicione a URL da solução aqui](https://sua-url-da-solução.com)
+- URL da solução:([https://sua-url-da-solução.com](https://github.com/ruan-xavier/3-column-preview-card-component))
 - URL do site ao vivo: [Adicione a URL do site ao vivo aqui](https://sua-url-do-site-ao-vivo.com)
 
 ## Meu processo
