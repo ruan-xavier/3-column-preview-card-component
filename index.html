@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | 3-column preview card component</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&family=Big+Shoulders+Display:wght@700&display=swap');
+
+    :root {
+      --bright-orange: hsl(31, 77%, 52%);
+      --dark-cyan: hsl(184, 100%, 22%);
+      --very-dark-cyan: hsl(179, 100%, 13%);
+      --paragraph-color: hsla(0, 0%, 100%, 0.75);
+      --background-color: hsl(0, 0%, 95%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Lexend Deca', sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+      padding: 30px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 920px;
+      border-radius: 10px;
+      overflow: hidden;
+      min-height: 500px;
+
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      color: var(--background-color);
+      padding: 50px;
+
+    }
+
+    .card:nth-child(1) {
+      background-color: var(--bright-orange);
+    }
+
+    .card:nth-child(2) {
+      background-color: var(--dark-cyan);
+    }
+
+    .card:nth-child(3) {
+      background-color: var(--very-dark-cyan);
+    }
+
+    img {
+      align-self: flex-start;
+    }
+
+    h2 {
+      font-family: 'Big Shoulders Display', sans-serif;
+      margin: 40px 0;
+      font-size: 32px;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: var(--paragraph-color);
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      margin-top: auto;
+      width: auto;
+      align-self: start;
+      background-color: var(--background-color);
+      white-space: nowrap;
+      border: 2px solid var(--background-color);
+    }
+
+    .card:nth-child(1) .btn {
+      color: var(--bright-orange);
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+    .card:nth-child(2) .btn {
+      color: var(--dark-cyan);
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+    .card:nth-child(3) .btn {
+      color: var(--very-dark-cyan);
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+    .card:nth-child(1) .btn:hover,
+    .card:nth-child(2) .btn:hover,
+    .card:nth-child(3) .btn:hover {
+      color: white;
+      background-color: transparent;
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+    @media (max-width: 375px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+      <img src="images/icon-sedans.svg" alt="icon-sedans">
+      <h2>Sedans</h2>
+      <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
+        or on your next road trip.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+    <div class="card">
+      <img src="images/icon-suvs.svg" alt="icon-suvs">
+      <h2>SUVs</h2>
+      <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
+        and off-road adventures.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+    <div class="card">
+      <img src="images/icon-luxury.svg" alt="icon-luxury">
+      <h2>Luxury</h2>
+      <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
+        rental and arrive in style.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/ruan-xavier">Ruan Xavier</a>.
+  </div>
+</body>
+
+</html>
